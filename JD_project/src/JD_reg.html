@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>京东注册</title>
+    <!-- <script src="../js/reg.js"></script> -->
+    <script src="./script/js/jquery.js "></script>
+    <!-- <script src="../js/reg.js"></script> -->
+    <link rel="stylesheet" href="./css/JD_reg.css">
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
+    <!--[if lt IE 9]>
+              <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+              <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+            <![endif]-->
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- 导航部分开始 -->
+        <div class="nav">
+            <span class="logo">
+        </span>
+            <b>京东商城</b>
+        </div>
+        <!-- 导航部分结束 -->
+        <!-- 表单上部开始 -->
+        <div class="container nav-up ">
+            <div class="row ">
+                <div class="col-lg-2 left">
+                    <div class=" glyphicon glyphicon-phone"></div>
+                    <span>京东账号</span> </div>
+
+                <div class="col-lg-2 center">
+                    <div class=" glyphicon glyphicon-folder-open"></div>
+                    <span> 京东邮箱</span></div>
+                <div class="col-lg-2 right">已有京东账号<a href="#" style="color: #007df0; font-size:14px;">登陆></a></div>
+            </div>
+
+        </div>
+        <!-- 表单主题 -->
+        <form action="../php/regist.php" method="POST">
+            <div class="main-inner block-center">
+                <ul>
+                    <li>
+                        <div>用户名</div><input type="text" name="username" id="username"></li>
+                    <li>
+                        <div>密码</div><input type="password" name="password" id="password"></li>
+                    <li>
+                        <div>邮箱</div><input type="text" name="email" id="email"></li>
+
+                    <button type="submit" class="btn" style="width:200px;height:40px;color:#ffffff;border-radius: 20px;background:red;">注册</button>
+                </ul>
+            </div>
+        </form>
+        <!-- input输入框 -->
+    </div>
+    <script src="./script/js/jquery.js "></script>
+    <script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js "></script>
+    <script src="./script/js/JD_regist.js"></script>
+</body>
+
+</html>

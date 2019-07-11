@@ -1,0 +1,142 @@
+@charset "utf-8";
+//more_block的代码
+.more_block {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    .more_inner_block {
+        width: 1190px;
+        margin: auto;
+        p {
+            margin-bottom: 30px;
+        }
+    }
+    ul {
+        display: flex;
+        margin-bottom: 5px;
+        justify-content: space-around;
+        li {
+            width: 200px;
+            height: 235px;
+            background: #ffffff;
+            text-align: center;
+            padding: 50px 15px 20px 15px;
+            span {
+                display: inline-block;
+                margin-right: 10px;
+                color: red;
+                font-size: 18px;
+                margin-top: 10px;
+            }
+            .jian {
+                width: 30px;
+                border: 2px solid red;
+                border-radius: 2px;
+                font-size: 10px;
+                vertical-align: 4px;
+            }
+        }
+    }
+    img {
+        width: 150px;
+        height: 150px;
+        margin: auto;
+    }
+    .tu_details {
+        width: 198px;
+        height: 36px;
+        overflow: hidden;
+        white-space: nowarp;
+        text-overflow: ellipsis;
+        color: #7d7d7d;
+        margin-top: 15px;
+    }
+}
+
+.title {
+    p {
+        width: 1190px;
+        height: 45px;
+        margin: auto;
+        text-align: center;
+        strong {
+            width: 100px;
+            color: #222222;
+            font-size: 28px;
+            font-weight: 800;
+            margin: auto;
+        }
+    }
+}
+
+//主要的界面开始,放置轮基本样式等
+.main_base_style {
+    width: 100%;
+    // height: 1200px;
+    p {
+        margin: 30px 0px;
+    }
+    .base_inner_div {
+        width: 1190px;
+        margin: auto;
+    }
+    //居家优品
+    .base_style_div {
+        margin-bottom: 12px;
+        position: relative;
+        .style_1 {
+            width: 340px;
+            height: 420px;
+            margin-left: 20px;
+            .style_1_hidden {
+                width: 340px;
+                height: 420px;
+                border: 5px solid #222;
+                position: absolute;
+                top: 10px;
+                left: 0px;
+                z-index: -1;
+            }
+        }
+        .style_2 {
+            padding: 20px;
+            .fir_sp {
+                font-size: 22px;
+                color: #222;
+            }
+            .sec_sp {
+                font-size: 14px;
+                color: #666666;
+            }
+        }
+        .s2-center {
+            img {
+                width: 350px;
+                height: 180px;
+            }
+        }
+        .s2-bottom {
+            margin: 10px 0px;
+            & img:nth-of-type(1) {
+                margin-right: 10px;
+            }
+            img {
+                width: 170px;
+                height: 180px;
+                float: left;
+                // margin: 0 5px;
+            }
+        }
+    }
+    .base_style_div,
+    .base_style_div1 {
+        display: flex;
+        justify-content: space-around;
+        &>div {
+            width: 350px;
+            height: 400px;
+            //  float: left;
+            background: #ffffff;
+        }
+    }
+}
