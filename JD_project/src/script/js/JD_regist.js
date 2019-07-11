@@ -14,7 +14,6 @@
     let regemail = /^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]{3})+$/;
 
     btn.on('click', function() {
-        console.log(1234567)
         inps.each(function(i, elm) {
             if (!$(elm).val()) {
                 btn.attr('disabled', 'disabled');
@@ -22,11 +21,11 @@
                     marginTop: 20,
                     color: 'red'
                 });
+            } else {
+                alert('注册成功，点击登陆');
+                window.open("JD_log.html");
             }
         });
-        alert('注册成功，点击登陆');
-        window.open("./JD_log.html");
-        //return false;
     });
     inps.on('focus', function() {
         btn.removeAttr('disabled');
