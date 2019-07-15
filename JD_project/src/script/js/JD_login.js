@@ -10,10 +10,12 @@
             },
             dataType: 'json',
             success: function(data) {
-                console.log(data.has);
                 if (data.has) {
-                    alert("登陆成功，点击跳转")
-                    location.href = "./index.html"
+                    cookie.set('uername', $('#user').val());
+                    alert("登陆成功，点击跳转");
+                    location.href = "./index.html";
+
+
                 } else {
                     alert('账号或密码不匹配，重新输入')
                     location.reload();

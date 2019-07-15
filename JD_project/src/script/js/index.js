@@ -1,3 +1,37 @@
+//用户欢迎
+;
+(function($) {
+    if (cookie.get('uername')) {
+        $(".first-li b").html(cookie.get('uername') + "先生，您已登陆");
+        $(".first-li a:first").attr({
+            href: "#"
+        });
+        $(".first-li a:first").on('click', function() { alert('您已登陆，请勿重复操作'); });
+        $(".first-li a:last").css({
+            display: 'none'
+        });
+        $(".first-li .seconed").css({
+            display: '',
+            color: '#666'
+        }).on('click', function() {
+            $(".first-li b").html('访客，请您登录');
+            $(this).css({
+                display: 'none'
+            })
+            cookie.remove('uername');
+            $(".first-li a:last").css({
+                display: ''
+            });
+            cookie.remove('uername')
+            location.reload();
+        });
+        $(".first-li a:last").attr({
+            display: 'none'
+        });
+        //cookie.remove('uername');
+    }
+})(jQuery);
+
 // 跨域js,JD跨taobao
 ;
 (function($) {
@@ -296,12 +330,8 @@
     })
 })(jQuery);
 //十张渲染图片
-
-
-
 ;
 (function($) {
-    console.log(2345678)
     $.ajax({
         type: "get",
         url: "../php/getData.php",
@@ -312,7 +342,6 @@
             let template = "";
             res.forEach(elem => {
                 let pic = JSON.parse(elem.pic);
-                console.log(pic[0].src)
                 if (elem.id < 6) {
                     template = `
                 <li>

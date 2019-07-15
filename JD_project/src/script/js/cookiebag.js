@@ -5,9 +5,9 @@
             if (day) {
                 let date = new Date();
                 date.setDate(date.getDate() + day);
-                document.cookie = key + '=' + name + ';expires=' + date + ';path=/'
+                document.cookie = key + '=' + name + ';expires=' + date + ';path=/';
             } else {
-                document.cookie = key + '=' + name + ';path=/'
+                document.cookie = key + '=' + name + ';path=/';
             }
         },
         get: function(key) {

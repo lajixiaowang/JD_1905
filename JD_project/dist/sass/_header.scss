@@ -1,0 +1,285 @@
+@charset "utf-8";
+//顶部的banner的盒子
+.banner {
+    width: 100%;
+    height: 480px;
+    .fs_inner {
+        width: 1190px;
+        height: 480px;
+        margin: 0 auto;
+        //background: red;
+        position: relative;
+    }
+    .cate {
+        width: 190px;
+        position: absolute;
+        left: 0px;
+    }
+}
+
+//楼梯效果的css
+.step {
+    width: 30px;
+    height: 370px;
+    position: fixed;
+    top: 50px;
+    right: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: #acabab;
+    color: #ffffff;
+    margin: 30px 0;
+    font-weight: bold;
+    z-index: 1;
+    opacity: 0.8;
+    border-radius: 8px;
+    li {
+        &:hover {
+            color: red;
+            background: #f5f3f3;
+        }
+        text-align: center;
+        height: 40px;
+        width: 30px;
+        cursor: pointer;
+    }
+}
+
+.acti {
+    color: #f30d3f;
+    background: #f5f3f3;
+}
+
+.cate_menu {
+    width: 169px;
+    height: 468px;
+    background: #fefefe;
+    padding: 6px;
+    padding-left: 15px;
+    li {
+        height: 26px;
+        a {
+            font-size: 14px;
+            color: #626262;
+        }
+    }
+}
+
+.banner {
+    margin-bottom: 12px;
+    .news_top {
+        height: 153px;
+        text-align: center;
+        .tu_touxiang {
+            height: 65px;
+            margin-bottom: 8px;
+            position: relative;
+            img {
+                box-shadow: 0px 0px 10px #d0d0d0;
+                border: 5px solid #e4e3e3;
+                border-radius: 50%;
+                margin: auto;
+                width: 55px;
+                height: 55px;
+                position: absolute;
+                left: 55px;
+                top: -8px;
+            }
+        }
+        .regist {
+            margin-top: 5px;
+            a {
+                color: #666666;
+            }
+        }
+        .left_yuan,
+        .right_yuan {
+            margin-top: 10px;
+            width: 70px;
+            height: 25px;
+            display: inline-block;
+            border-radius: 12px;
+            box-shadow: 3px 3px 3px #d0d0d5;
+            text-align: center;
+            line-height: 25px;
+        }
+        .left_yuan {
+            a {
+                color: red;
+            }
+            background: #ffffff;
+        }
+        .right_yuan {
+            background: #363634;
+            a {
+                color: #e5d790;
+            }
+        }
+    }
+    .J_tab_head {
+        height: 24px;
+        margin: 10px 0px;
+        .news_first {
+            height: 24px;
+            color: #1e1e1e;
+            font-size: 13px;
+            font-weight: 800;
+            line-height: 24px;
+            margin-left: 10px;
+        }
+        .news_more {
+            height: 24px;
+            float: right;
+            margin-right: 10px;
+            line-height: 24px;
+        }
+    }
+    .news {
+        width: 190px;
+        height: 470px;
+        background: #fefefe;
+        position: absolute;
+        right: 0px;
+        top: 10px;
+    }
+    //小新闻的样式
+    .news_list {
+        border-bottom: 1px solid #d8d8d2;
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+        span {
+            border-radius: 3px;
+            display: inline-block;
+            width: 35px;
+            line-height: 16px;
+            color: #ffffff;
+            text-align: center;
+            height: 16px;
+            background: #e47f7f;
+        }
+        li {
+            margin-left: 10px;
+            height: 20px;
+            width: 160px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+    .center-tu {
+        //大轮播旁边的三个小盒子
+        height: 470px;
+        width: 190px;
+        // display: inline-block;
+        position: absolute;
+        top: 10px;
+        right: 200px;
+        //background: yellow;
+        // ul {
+        //     // display: flex;
+        //     // flex-direction: column;
+        //     // justify-content: space-between;
+        // }
+        .li1,
+        .li2 {
+            margin-bottom: 10px;
+        }
+        img {
+            width: 190px;
+            height: 150px;
+        }
+    }
+    //icon的tab切换css代码
+    .service_list {
+        width: 190px;
+        height: 150px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        li {
+            width: 42px;
+            height: 50px;
+            i {
+                display: block;
+            }
+            a {
+                text-align: center
+            }
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+    //大轮播开始
+    .inner_banner {
+        height: 470px;
+        width: 590px;
+        position: absolute;
+        padding-top: 10px;
+        left: 200px;
+        overflow: hidden;
+        //  background: blue;
+        ul {
+            height: 460px;
+            width: 2950px;
+            position: absolute;
+            li {
+                float: left;
+            }
+        }
+    }
+    .slider_icon {
+        position: absolute;
+        z-index: 1;
+        left: 40%;
+        bottom: 20px;
+        font-size: 0;
+        padding: 4px 8px;
+        border-radius: 12px;
+        background-color: hsla(0, 0%, 100%, .3);
+        i {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin: 0 5px;
+        }
+    }
+    .btn {
+        background: #fff;
+    }
+    .btn_act {
+        background: red;
+    }
+    .arrow {
+        width: 30px;
+        height: 60px;
+        background-color: rgba(0, 0, 0, .2);
+        position: absolute;
+        top: 50%;
+        margin-top: -30px;
+    }
+    .prve {
+        left: 0;
+    }
+    .next {
+        right: 0;
+    }
+    .arrow span {
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-bottom: 2px solid #fff;
+        border-left: 2px solid #fff;
+    }
+    .slider_left {
+        margin: 25px 0 0 10px;
+        transform: rotate(45deg);
+    }
+    .slider_right {
+        margin: 25px 0 0 5px;
+        transform: rotate(-135deg);
+    }
+}

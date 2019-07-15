@@ -618,6 +618,34 @@ button {
     width: 60px;
 }
 
+.car .num {
+    position: relative;
+}
+
+#sp_l {
+    /* position: absolute; */
+    /* 
+    
+    background: #cf091a;
+    top: 0px;
+    left: -20px; */
+    /* width: 15px;
+    height: 15px;
+    display: inline-block; */
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+#sp_r {
+    /* position: absolute; */
+    /* display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #cf091a; */
+    cursor: pointer;
+    margin-left: 5px;
+}
+
 .car-wrap .car div img {
     width: 100px;
     height: 100px;
